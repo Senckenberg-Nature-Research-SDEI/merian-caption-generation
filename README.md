@@ -1,8 +1,12 @@
 # Nature, Culture and Heritage Ontology
 
+[![DOI](https://zenodo.org/badge/DOI/10.12761/sgn.2026.07.b877.svg)](https://doi.org/10.12761/sgn.2026.07.b877)
+
 This repository contains a prototype pipeline for building a multimodal ontology from historical nature-heritage material. The project is centered on Maria Sibylla Merian's work and is intended to connect concepts identified in paintings or scanned documents with entities and descriptions found in related articles.
 
 The current repository contains data derived from the digitized source described below, OCR output, shared JSON utilities, and an early text-cleaning/grammar-correction stage. The concept-recognition, entity-recognition, entity-linking, caption-generation, and ontology-drafting directories are present as extension points but do not currently contain implementation files.
+
+The source material is published on Zenodo as [*Der Raupen wunderbare Verwandelung, und sonderbare Blumen-nahrung*](https://zenodo.org/records/21458361). That record is the canonical reference for the digitized scans used here and provides the downloadable source assets referenced throughout this repository.
 
 ## Pipeline
 
