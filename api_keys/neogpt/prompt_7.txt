@@ -1,0 +1,6 @@
+Considering the classes that you have in the ontology, introduce some Data Property when meaningful, such as: 
+
+wine:hasPriceValue rdf:type owl:DatatypeProperty ; rdfs:range xsd:positiveInteger . 
+
+Modify the domain and range according to the type of value requested by the Data Property.
+Print only the new triples.

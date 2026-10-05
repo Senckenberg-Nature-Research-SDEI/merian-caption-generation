@@ -1,0 +1,29 @@
+Given a list of RDF-style triples and a set of defined individuals, generate a complete OWL ontology following best practices, using Turtle syntax (preferred).
+
+The ontology must include the following:
+
+- OWL classes for each unique conceptual entity.
+- OWL object properties for relationships where the object is another entity (i.e., a resource).
+- OWL datatype properties for relationships where the object is a literal (e.g., a string, number, or date).
+- Individuals (instances) with explicitly declared types and their corresponding property assertions
+- Roles and Events should be included into ontology as either property or classes.
+- Stict to provided content.
+
+
+Ensure the following:
+
+- Use of proper and consistent RDF, RDFS, and OWL vocabulary.
+- Inclusion of all required namespace declarations (e.g., rdf, rdfs, owl, xsd, and the base ontology prefix).
+- All triples are syntactically valid and semantically coherent in OWL 2 Turtle syntax.
+
+Output Requirements:
+
+- A cleaned, corrected, and well-structured OWL ontology serialized in Turtle.
+- Proper separation between:
+  - Class declarations
+  - Object property definitions
+  - Datatype property definitions
+  - Individual assertions
+- If necessary, provide comments or annotations for clarity.
+
+Optional: If any entities or relationships are ambiguous, make reasonable assumptions and annotate them with rdfs:comment.

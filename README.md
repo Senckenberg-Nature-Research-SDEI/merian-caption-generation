@@ -120,3 +120,7 @@ Recommended citation for the source material:
 ## License
 
 The project is distributed under the GNU General Public License version 3. See [LICENSE](LICENSE).
+# Nature Heritage Ontology
+
+1. Multimodal Ontology Draft for Nature Heritage
+2. Mapping Painting Concepts with Entities in Articles.

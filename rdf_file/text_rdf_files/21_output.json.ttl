@@ -1,0 +1,99 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+### Classes ###
+:Vehicle a owl:Class.
+:VehicleType a owl:Class.
+:Color a owl:Class.
+:EngineSize a owl:Class.
+:MaxSpeed a owl:Class.
+:DomainExpert a owl:Class.
+:Stakeholder a owl:Class.
+:Requirement a owl:Class.
+:Person a owl:Class.
+:Affiliation a owl:Class.
+:Project a owl:Class.
+:Skill a owl:Class.
+:Experience a owl:Class.
+:Author a owl:Class.
+:Title a owl:Class.
+:Topic a owl:Class.
+:Animal a owl:Class.
+:AnimalType a owl:Class.
+:Zoo a owl:Class.
+
+### Object Properties ###
+:hasType a owl:ObjectProperty.
+:hasColor a owl:ObjectProperty.
+:hasEngineSize a owl:ObjectProperty.
+:hasMaxSpeed a owl:ObjectProperty.
+:hasName a owl:ObjectProperty.
+:hasRole a owl:ObjectProperty.
+:hasAffiliation a owl:ObjectProperty.
+:hasProject a owl:ObjectProperty.
+:hasSkill a owl:ObjectProperty.
+:hasExperience a owl:ObjectProperty.
+:hasAuthor a owl:ObjectProperty.
+:hasTitle a owl:ObjectProperty.
+:hasTopic a owl:ObjectProperty.
+
+### Datatype Properties ###
+:Name a owl:DatatypeProperty.
+:Description a owl:DatatypeProperty.
+:Domain a owl:DatatypeProperty.
+:Concepts a owl:DatatypeProperty.
+:Relationships a owl:DatatypeProperty.
+:Classes a owl:DatatypeProperty.
+:Instances a owl:DatatypeProperty.
+:Expertise a owl:DatatypeProperty.
+:ContactInfo a owl:DatatypeProperty.
+:Priority a owl:DatatypeProperty.
+:Status a owl:DatatypeProperty.
+:Version a owl:DatatypeProperty.
+:Scalability a owl:DatatypeProperty.
+:Flexibility a owl:DatatypeProperty.
+:Modularity a owl:DatatypeProperty.
+:Changes a owl:DatatypeProperty.
+:Evolution a owl:DatatypeProperty.
+
+### Individuals ###
+:Vehicle rdf:type owl:NamedIndividual;
+    :hasType :VehicleType;
+    :hasColor :Color;
+    :hasEngineSize :EngineSize;
+    :hasMaxSpeed :MaxSpeed.
+
+:DomainExpert rdf:type owl:NamedIndividual;
+    :hasName :Name;
+    :Expertise :Expertise;
+    :ContactInfo :ContactInfo.
+
+:Stakeholder rdf:type owl:NamedIndividual;
+    :hasName :Name;
+    :Role :Role;
+    :ContactInfo :ContactInfo.
+
+:Requirement rdf:type owl:NamedIndividual;
+    :Description :Description;
+    :Priority :Priority;
+    :Status :Status.
+
+:Person rdf:type owl:NamedIndividual;
+    :hasName :Name;
+    :hasRole :Role;
+    :hasAffiliation :Affiliation;
+    :hasProject :Project;
+    :hasSkill :Skill;
+    :hasExperience :Experience;
+    :hasAuthor :Author;
+    :hasTitle :Title;
+    :hasTopic :Topic.
+
+:Animal rdf:type owl:NamedIndividual;
+    :hasType :AnimalType.
+
+:Zoo rdf:type owl:NamedIndividual;
+    :hasType :AnimalType.

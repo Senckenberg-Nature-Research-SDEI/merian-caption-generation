@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+# Classes
+:Concepts a owl:Class.
+:Relationships a owl:Class.
+:Classes a owl:Class.
+:Instances a owl:Class.
+:Domain a owl:Class.
+:Alignment a owl:Class.
+:Integration a owl:Class.
+:Sources a owl:Class.
+:Animal a owl:Class.
+:Forest a owl:Class.
+:OntologyDevelopment a owl:Class.
+:Skills a owl:Class.
+:Developments a owl:Class.
+
+# Object Properties
+:hasType a owl:ObjectProperty.
+:hasProperty a owl:ObjectProperty.
+:hasMethod a owl:ObjectProperty.
+:hasFormat a owl:ObjectProperty.
+:hasAlignmentMethod a owl:ObjectProperty.
+:hasIntegrationMethod a owl:ObjectProperty.
+
+# Datatype Properties
+:hasLabel a owl:DatatypeProperty.
+:hasDefinition a owl:DatatypeProperty.
+:hasAccuracy a owl:DatatypeProperty.
+:hasRepresentation a owl:DatatypeProperty.
+:hasSourceFormat a owl:DatatypeProperty.
+:hasStayCurrent a owl:DatatypeProperty.
+:hasEnsureSkillsUpToDate a owl:DatatypeProperty.
+
+# Individuals
+:Ontology1 a :Ontology;
+    :hasLabel "Ontology";
+    :hasDefinition "Concepts";
+    :hasHierarchy "Classes";
+    :hasAttributes "Instances";
+    :hasAnnotations "Instances";
+    :hasAccuracy "Domain";
+    :hasRepresentation "Domain";
+    :hasAlignmentMethod "Alignment";
+    :hasIntegrationMethod "Integration";
+    :hasSourceFormat "Sources".
+
+:Animal1 a :Animal;
+    :hasType :Forest1.
+
+:OntologyDevelopment1 a :OntologyDevelopment;
+    :hasStayCurrent :Developments1.
+
+:Skills1 a :Skills;
+    :hasEnsureSkillsUpToDate :Developments1.
+
+# Comments
+# - The ontology describes various concepts and their relationships.
+# - Animal1 is of type Forest1.
+# - OntologyDevelopment1 stays current with Developments1.
+# - Skills1 ensures skills are up to date with Developments1.

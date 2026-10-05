@@ -1,0 +1,136 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+# Classes
+:Flower a owl:Class.
+:Butterfly a owl:Class.
+:Image a owl:Class.
+:Book a owl:Class.
+:Ontology a owl:Class.
+:Validation a owl:Class.
+:OntologyDevelopmentProject a owl:Class.
+:DomainExpert a owl:Class.
+
+# Object Properties
+:hasColor a owl:ObjectProperty.
+:hasType a owl:ObjectProperty.
+:hasSize a owl:ObjectProperty.
+:hasWingspan a owl:ObjectProperty.
+:hasSpecies a owl:ObjectProperty.
+:hasFlightPattern a owl:ObjectProperty.
+:hasFeedingHabits a owl:ObjectProperty.
+:hasPetalArrangement a owl:ObjectProperty.
+:hasPetals a owl:ObjectProperty.
+:hasFragrance a owl:ObjectProperty.
+:hasContent a owl:ObjectProperty.
+:hasFormat a owl:ObjectProperty.
+:hasResolution a owl:ObjectProperty.
+:hasTitle a owl:ObjectProperty.
+:hasAuthor a owl:ObjectProperty.
+:hasPublicationYear a owl:ObjectProperty.
+:hasAccuracy a owl:ObjectProperty.
+:hasEffectiveness a owl:ObjectProperty.
+:hasMethodology a owl:ObjectProperty.
+:hasAccuracyAssessment a owl:ObjectProperty.
+:hasEffectivenessAssessment a owl:ObjectProperty.
+:hasDevelopmentMethodologies a owl:ObjectProperty.
+:hasTools a owl:ObjectProperty.
+:hasAlignment a owl:ObjectProperty.
+:hasProjectName a owl:ObjectProperty.
+:hasProjectDescription a owl:ObjectProperty.
+:hasApproach a owl:ObjectProperty.
+:hasChallengesFaced a owl:ObjectProperty.
+:hasLessonsLearned a owl:ObjectProperty.
+:hasName a owl:ObjectProperty.
+:hasExpertise a owl:ObjectProperty.
+:hasContactInformation a owl:ObjectProperty.
+
+# Datatype Properties
+:hasColor a owl:DatatypeProperty.
+:hasType a owl:DatatypeProperty.
+:hasSize a owl:DatatypeProperty.
+:hasWingspan a owl:DatatypeProperty.
+:hasSpecies a owl:DatatypeProperty.
+:hasFlightPattern a owl:DatatypeProperty.
+:hasFeedingHabits a owl:DatatypeProperty.
+:hasPetalArrangement a owl:DatatypeProperty.
+:hasPetals a owl:DatatypeProperty.
+:hasFragrance a owl:DatatypeProperty.
+:hasContent a owl:DatatypeProperty.
+:hasFormat a owl:DatatypeProperty.
+:hasResolution a owl:DatatypeProperty.
+:hasTitle a owl:DatatypeProperty.
+:hasAuthor a owl:DatatypeProperty.
+:hasPublicationYear a owl:DatatypeProperty.
+:hasAccuracy a owl:DatatypeProperty.
+:hasEffectiveness a owl:DatatypeProperty.
+:hasMethodology a owl:DatatypeProperty.
+:hasAccuracyAssessment a owl:DatatypeProperty.
+:hasEffectivenessAssessment a owl:DatatypeProperty.
+:hasDevelopmentMethodologies a owl:DatatypeProperty.
+:hasTools a owl:DatatypeProperty.
+:hasAlignment a owl:DatatypeProperty.
+:hasProjectName a owl:DatatypeProperty.
+:hasProjectDescription a owl:DatatypeProperty.
+:hasApproach a owl:DatatypeProperty.
+:hasChallengesFaced a owl:DatatypeProperty.
+:hasLessonsLearned a owl:DatatypeProperty.
+:hasName a owl:DatatypeProperty.
+:hasExpertise a owl:DatatypeProperty.
+:hasContactInformation a owl:DatatypeProperty.
+
+# Individuals
+:Flower1 a :Flower;
+    :hasColor "string";
+    :hasType "string";
+    :hasSize "string";
+    :hasFragrance "string";
+    :hasPetalArrangement "string";
+    :hasPetals 0.
+
+:Butterfly1 a :Butterfly;
+    :hasColor "string";
+    :hasType "string";
+    :hasWingspan 0;
+    :hasSpecies "string";
+    :hasFlightPattern "string";
+    :hasFeedingHabits "string".
+
+:Image1 a :Image;
+    :hasFlower "string";
+    :hasButterfly "string";
+    :hasOldBook "string";
+    :hasContent "string";
+    :hasFormat "string";
+    :hasResolution "string".
+
+:Book1 a :Book;
+    :hasTitle "string";
+    :hasAuthor "string";
+    :hasPublicationYear "string".
+
+:Ontology1 a :Ontology;
+    :hasAccuracy "string";
+    :hasEffectiveness "string";
+    :hasDevelopmentMethodologies "string";
+    :hasTools "string".
+
+:Validation1 a :Validation;
+    :hasMethodology "string";
+    :hasAccuracyAssessment "string";
+    :hasEffectivenessAssessment "string".
+
+:OntologyDevelopmentProject1 a :OntologyDevelopmentProject;
+    :hasProjectName "string";
+    :hasProjectDescription "string";
+    :hasApproach "string";
+    :hasChallengesFaced "string";
+    :hasLessonsLearned "string".
+
+:DomainExpert1 a :DomainExpert;
+    :hasName "string";
+    :hasExpertise "string";
+    :hasContactInformation "string".

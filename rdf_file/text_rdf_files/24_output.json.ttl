@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+### Classes ###
+:Building a owl:Class;
+    rdfs:label "Building".
+
+:Person a owl:Class;
+    rdfs:label "Person".
+
+:Event a owl:Class;
+    rdfs:label "Event".
+
+### Object Properties ###
+:hasArchitect a owl:ObjectProperty;
+    rdfs:label "hasArchitect";
+    rdfs:domain :Building;
+    rdfs:range :Person.
+
+:hasHistoricalSignificance a owl:ObjectProperty;
+    rdfs:label "hasHistoricalSignificance";
+    rdfs:domain :Building;
+    rdfs:range :Event.
+
+### Datatype Properties ###
+:height a owl:DatatypeProperty;
+    rdfs:label "height";
+    rdfs:domain :Building;
+    rdfs:range xsd:integer.
+
+:location a owl:DatatypeProperty;
+    rdfs:label "location";
+    rdfs:domain :Building;
+    rdfs:range xsd:string.
+
+:constructionYear a owl:DatatypeProperty;
+    rdfs:label "constructionYear";
+    rdfs:domain :Building;
+    rdfs:range xsd:string.
+
+:architectName a owl:DatatypeProperty;
+    rdfs:label "architectName";
+    rdfs:domain :Person;
+    rdfs:range xsd:string.
+
+:architectNationality a owl:DatatypeProperty;
+    rdfs:label "architectNationality";
+    rdfs:domain :Person;
+    rdfs:range xsd:string.
+
+:historicalEvent a owl:DatatypeProperty;
+    rdfs:label "historicalEvent";
+    rdfs:domain :Event;
+    rdfs:range xsd:string.
+
+:historicalPeriod a owl:DatatypeProperty;
+    rdfs:label "historicalPeriod";
+    rdfs:domain :Event;
+    rdfs:range xsd:string.
+
+### Individuals ###
+:Seidenturm a :Building;
+    :height 100;
+    :location "Zurich, Switzerland";
+    :constructionYear "13th century";
+    :hasArchitect :HansFelder;
+    :hasHistoricalSignificance :BattleOfZurich.
+
+:HansFelder a :Person;
+    :architectName "Hans Felder";
+    :architectNationality "Swiss".
+
+:BattleOfZurich a :Event;
+    :historicalEvent "Battle of Zurich";
+    :historicalPeriod "Napoleonic Wars".
+
+### Competency Question ###
+:CompetencyQuestion a owl:Class;
+    rdfs:label "Competency Question".
+
+:Ontology a :CompetencyQuestion;
+    :Concepts "Description";
+    :Relationships "Type";
+    :Accuracy "High".
+
+:Concepts a owl:Class;
+    rdfs:label "Concepts".
+
+:Relationships a owl:Class;
+    rdfs:label "Relationships".
+
+:Description a owl:DatatypeProperty;
+    rdfs:label "Description";
+    rdfs:domain :Concepts;
+    rdfs:range xsd:string.
+
+:Representation a owl:DatatypeProperty;
+    rdfs:label "Representation";
+    rdfs:domain :Concepts;
+    rdfs:range xsd:string.
+
+:Type a owl:DatatypeProperty;
+    rdfs:label "Type";
+    rdfs:domain :Relationships;
+    rdfs:range xsd:string.
+
+:Direction a owl:DatatypeProperty;
+    rdfs:label "Direction";
+    rdfs:domain :Relationships;
+    rdfs:range xsd:string.
+
+:Strength a owl:DatatypeProperty;
+    rdfs:label "Strength";
+    rdfs:domain :Relationships;
+    rdfs:range xsd:string.

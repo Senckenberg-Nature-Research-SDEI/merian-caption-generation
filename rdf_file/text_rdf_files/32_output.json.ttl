@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+### Classes ###
+:Person a owl:Class.
+:Product a owl:Class.
+:Organization a owl:Class.
+:Ontology a owl:Class.
+:Domain a owl:Class.
+:Vehicle a owl:Class.
+:DomainExpert a owl:Class.
+:InformationSources a owl:Class.
+:Location a owl:Class.
+:Role a owl:Class.
+:Event a owl:Class.
+
+### Object Properties ###
+:hasProperty a owl:ObjectProperty.
+:hasType a owl:ObjectProperty.
+:hasColor a owl:ObjectProperty.
+:hasEngineSize a owl:ObjectProperty.
+:hasFuelType a owl:ObjectProperty.
+:hasAlignment a owl:ObjectProperty.
+:hasIntegration a owl:ObjectProperty.
+:hasExistingOntologies a owl:ObjectProperty.
+:hasEmployee a owl:ObjectProperty.
+:worksFor a owl:ObjectProperty.
+:worksOn a owl:ObjectProperty.
+:hasParticipant a owl:ObjectProperty.
+:hasSkill a owl:ObjectProperty.
+:possessesSkill a owl:ObjectProperty.
+:supplies a owl:ObjectProperty.
+:hasSupplier a owl:ObjectProperty.
+:takesPlaceAt a owl:ObjectProperty.
+:hasEvent a owl:ObjectProperty.
+
+### Datatype Properties ###
+:Name a owl:DatatypeProperty.
+:Age a owl:DatatypeProperty.
+:Gender a owl:DatatypeProperty.
+:Occupation a owl:DatatypeProperty.
+:Price a owl:DatatypeProperty.
+:Category a owl:DatatypeProperty.
+:Industry a owl:DatatypeProperty.
+:Location a owl:DatatypeProperty.
+:Description a owl:DatatypeProperty.
+:Concepts a owl:DatatypeProperty.
+:Relationships a owl:DatatypeProperty.
+:Classes a owl:DatatypeProperty.
+:Instances a owl:DatatypeProperty.
+:Expertise a owl:DatatypeProperty.
+:ContactInformation a owl:DatatypeProperty.
+:Version a owl:DatatypeProperty.
+:DateCreated a owl:DatatypeProperty.
+:Collaborators a owl:DatatypeProperty.
+:Scalability a owl:DatatypeProperty.
+:Flexibility a owl:DatatypeProperty.
+:Modularity a owl:DatatypeProperty.
+:Extensibility a owl:DatatypeProperty.
+:Changes a owl:DatatypeProperty.
+:Evolution a owl:DatatypeProperty.
+:Adaptability a owl:DatatypeProperty.
+:NewDevelopments a owl:DatatypeProperty.
+:BestPractices a owl:DatatypeProperty.
+:OnlineResources a owl:DatatypeProperty.
+:Conferences a owl:DatatypeProperty.
+:Journals a owl:DatatypeProperty.
+
+### Individuals ###
+:John a :Person;
+    :Name "John";
+    :Age 30;
+    :Gender "Male";
+    :Occupation "Engineer";
+    :worksFor :OrganizationA;
+    :hasSkill "Programming".
+
+:ProductA a :Product;
+    :Name "Product A";
+    :Price 50;
+    :Category "Electronics";
+    :supplies :OrganizationA.
+
+:OrganizationA a :Organization;
+    :Name "Organization A";
+    :Industry "Technology";
+    :Location "CityX".
+
+:OntologyA a :Ontology;
+    :Name "Ontology A";
+    :Description "Description of Ontology A";
+    :Domain "Technology";
+    :Concepts "Concept1, Concept2";
+    :Relationships "Relation1, Relation2";
+    :Classes "Class1, Class2";
+    :Instances "Instance1, Instance2";
+    :Alignment "Alignment1";
+    :Integration "Integration1";
+    :ExistingOntologies "OntologyB, OntologyC";
+    :Version "1.0";
+    :DateCreated "2022-01-01";
+    :Collaborators "Collab1, Collab2";
+    :Scalability "High";
+    :Flexibility "Medium";
+    :Modularity "Low";
+    :Extensibility "High".
+
+:DomainExpertA a :DomainExpert;
+    :Name "ExpertA";
+    :Expertise "DomainA";
+    :ContactInformation "expertA@example.com".
+
+:InformationSourcesA a :InformationSources;
+    :OnlineResources "Resource1, Resource2";
+    :Conferences "Conf1, Conf2";
+    :Journals "Journal1, Journal2".
+
+:LocationA a :Location;
+    :takesPlaceAt "EventX";
+    :hasEvent "EventX".
+
+### Roles ###
+:Role a owl:Class.
+
+### Events ###
+:Event a owl:Class.

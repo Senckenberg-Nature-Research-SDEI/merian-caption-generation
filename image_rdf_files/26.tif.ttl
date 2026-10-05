@@ -1,0 +1,201 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix : <http://example.org/ontology#>.
+
+### Classes ###
+:Ontology a owl:Class.
+:Plants a owl:Class.
+:Insects a owl:Class.
+:Illustration a owl:Class.
+:Book a owl:Class.
+:Flower a owl:Class.
+:Butterfly a owl:Class.
+:ScientificClassification a owl:Class.
+:BotanicalSubject a owl:Class.
+:PlantSpecies a owl:Class.
+:BotanicalGuide a owl:Class.
+:User a owl:Class.
+:SubjectMatterExpert a owl:Class.
+:Botanist a owl:Class.
+:Entomologist a owl:Class.
+:ExpertiseContribution a owl:Class.
+:Research a owl:Class.
+:Discoveries a owl:Class.
+:Botany a owl:Class.
+:Entomology a owl:Class.
+:Ontologies a owl:Class.
+:BotanicalGuides a owl:Class.
+:OldBook a owl:Class.
+:DataQuality a owl:Class.
+:LevelOfDetail a owl:Class.
+:BotanicalClassification a owl:Class.
+:EntomologicalClassification a owl:Class.
+:TimePeriod a owl:Class.
+
+### Object Properties ###
+:developed_for a owl:ObjectProperty.
+:has_characteristics a owl:ObjectProperty.
+:has_description a owl:ObjectProperty.
+:has_image a owl:ObjectProperty.
+:has_title a owl:ObjectProperty.
+:has_year a owl:ObjectProperty.
+:has_type a owl:ObjectProperty.
+:has_color a owl:ObjectProperty.
+:has_species a owl:ObjectProperty.
+:has_class a owl:ObjectProperty.
+:has_order a owl:ObjectProperty.
+:has_family a owl:ObjectProperty.
+:has_genus a owl:ObjectProperty.
+:has_scientific_name a owl:ObjectProperty.
+:has_common_name a owl:ObjectProperty.
+:has_taxonomic_classification a owl:ObjectProperty.
+:has_habitat a owl:ObjectProperty.
+:has_endangered_status a owl:ObjectProperty.
+:has_plant_identification a owl:ObjectProperty.
+:has_uses a owl:ObjectProperty.
+:has_background a owl:ObjectProperty.
+:is_user_friendly a owl:ObjectProperty.
+:is_accessible a owl:ObjectProperty.
+:has_expertise a owl:ObjectProperty.
+:has_collaboration_role a owl:ObjectProperty.
+:has_specialization a owl:ObjectProperty.
+:has_ontology_development_process a owl:ObjectProperty.
+:has_authors a owl:ObjectProperty.
+:has_publication_date a owl:ObjectProperty.
+:has_keywords a owl:ObjectProperty.
+:has_location a owl:ObjectProperty.
+:has_date a owl:ObjectProperty.
+:has_revision a owl:ObjectProperty.
+:has_update a owl:ObjectProperty.
+:has_information a owl:ObjectProperty.
+:has_scientific_understanding a owl:ObjectProperty.
+:has_accuracy a owl:ObjectProperty.
+:has_consistency a owl:ObjectProperty.
+:has_complexity a owl:ObjectProperty.
+:has_subject a owl:ObjectProperty.
+:has_age a owl:ObjectProperty.
+
+### Datatype Properties ###
+:has_plant_identification a owl:DatatypeProperty.
+:has_description a owl:DatatypeProperty.
+:has_uses a owl:DatatypeProperty.
+:has_scientific_understanding a owl:DatatypeProperty.
+
+### Individuals ###
+:Ontology rdf:type :Ontology;
+    :developed_for "Botanical guides", "Publications";
+    :is_user_friendly true;
+    :is_accessible true;
+    :has_revision "2022-10-01T00:00:00Z";
+    :has_update "2022-10-15T00:00:00Z".
+
+:Plants rdf:type :Plants;
+    :has_characteristics :Flower.
+
+:Insects rdf:type :Insects;
+    :has_characteristics :Butterfly.
+
+:Illustration rdf:type :Illustration;
+    :has_description "Text";
+    :has_image "Image";
+    :has_complexity :LevelOfDetail;
+    :has_subject :Botanical.
+
+:Book rdf:type :Book;
+    :has_title "Text";
+    :has_year 2022.
+
+:Flower rdf:type :Flower;
+    :has_type "Text";
+    :has_color "Text".
+
+:Butterfly rdf:type :Butterfly;
+    :has_species "Text";
+    :has_color "Text".
+
+:ScientificClassification rdf:type :ScientificClassification;
+    :has_class "Description";
+    :has_order "Description";
+    :has_family "Description";
+    :has_genus "Description";
+    :has_species "Description".
+
+:BotanicalSubject rdf:type :BotanicalSubject;
+    :has_scientific_name "Description";
+    :has_common_name "Description";
+    :has_description "Description";
+    :has_image "Description".
+
+:PlantSpecies rdf:type :PlantSpecies;
+    :has_taxonomic_classification "String";
+    :has_habitat "String";
+    :has_endangered_status "String";
+    :has_scientific_understanding "Text".
+
+:BotanicalGuide rdf:type :BotanicalGuide;
+    :has_plant_identification "String";
+    :has_description "String";
+    :has_uses "String";
+    :has_information "Text".
+
+:User rdf:type :User;
+    :has_background "String".
+
+:SubjectMatterExpert rdf:type :SubjectMatterExpert;
+    :has_expertise "String";
+    :has_collaboration_role "String".
+
+:Botanist rdf:type :Botanist;
+    :has_specialization "String".
+
+:Entomologist rdf:type :Entomologist;
+    :has_specialization "String".
+
+:ExpertiseContribution rdf:type :ExpertiseContribution;
+    :has_ontology_development_process "String".
+
+:Research rdf:type :Research;
+    :has_title "Text";
+    :has_authors "Text";
+    :has_publication_date "Text";
+    :has_keywords "Text".
+
+:Discoveries rdf:type :Discoveries;
+    :has_location "Text";
+    :has_date "Text";
+    :has_description "Text".
+
+:Botany rdf:type :Botany;
+    :has_plant_species "Text";
+    :has_habitat "Text";
+    :has_uses "Text".
+
+:Entomology rdf:type :Entomology;
+    :has_insect_species "Text";
+    :has_behavior "Text";
+    :has_habitat "Text".
+
+:Ontologies rdf:type :Ontologies;
+    :has_concepts "Text";
+    :has_relationships "Text";
+    :has_annotations "Text".
+
+:BotanicalGuides rdf:type :BotanicalGuides;
+    :has_plant_identification "Text";
+    :has_habitat_description "Text";
+    :has_uses "Text".
+
+:OldBook rdf:type :OldBook;
+    :has_age "Time Period".
+
+:DataQuality rdf:type :DataQuality.
+
+:LevelOfDetail rdf:type :LevelOfDetail.
+
+:BotanicalClassification rdf:type :BotanicalClassification.
+
+:EntomologicalClassification rdf:type :EntomologicalClassification.
+
+:TimePeriod rdf:type :TimePeriod.

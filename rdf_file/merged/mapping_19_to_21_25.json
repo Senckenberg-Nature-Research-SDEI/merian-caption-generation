@@ -1,0 +1,24 @@
+{
+  "link_count": 1,
+  "strict_links_only": true,
+  "allowed_relations": [
+    "equivalentClass",
+    "equivalentProperty",
+    "sameAs"
+  ],
+  "min_confidence": 0.65,
+  "rewrite_mapping": {
+    "BotanicalOntology": "Ontology"
+  },
+  "links": [
+    {
+      "source": "BotanicalOntology",
+      "source_type": "class",
+      "target": "Ontology",
+      "target_type": "class",
+      "relation": "equivalentClass",
+      "confidence": 0.9,
+      "reason": "Both represent formal systems for organizing knowledge in a specific domain"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+For all object properties, if lacking, generate also the inverse property, keeping the ontology consistent restricting domain and range where meaningful.
+Print only the new triples.

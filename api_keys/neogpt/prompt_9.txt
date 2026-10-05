@@ -1,0 +1,2 @@
+Now for all the classes and properties add a triple that describes in natural language its meaning, using the annotation property rdfs:comment.
+Print only the new triples.

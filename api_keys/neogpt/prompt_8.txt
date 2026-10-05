@@ -1,0 +1,9 @@
+For all the classes introduce some axiomatisation in the ontology when meaningful and relevant, like these: 
+
+:GrapeVariety EquivalentTo usedToProduce some Wine 
+:Wine EquivalentTo hasVintage some Vintage 
+:Wine SubClassOf hasRating some Rating 
+
+Make sure that the ontology is consistent.
+Do it for all the classes for which it makes sense having an axiomatisation.
+Print only the new triples.

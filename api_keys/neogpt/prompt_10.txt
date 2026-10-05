@@ -1,0 +1,9 @@
+Now populate the ontology with meaningful individuals, such as these: 
+
+:RieslingGrape rdf:type :GrapeVariety 
+:SancerreRegion rdf:type :WineRegion 
+:Selaks rdf:type :Wine 
+:SevreEtMaine rdf:type :Wine 
+
+Make it as complete as possible, introducing all the types of wine that you can as individuals, as well as wine regions, awards, and wine producers. 
+Print only the new triples.

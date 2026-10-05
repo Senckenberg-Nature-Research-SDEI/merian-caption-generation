@@ -1,0 +1,1 @@
+For each Competency Question extract entities and properties that have to be introduced in the ontology. Provide in a json format.

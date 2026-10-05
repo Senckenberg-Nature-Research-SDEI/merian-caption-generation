@@ -1,0 +1,6 @@
+{
+   "description": "Please explain the image in detail.",
+   "objects": "Please list the objects in the image.",
+   "basic_caption": "Please provide a basic caption for the image.",
+   "detailed_caption": "Please provide a detailed caption for the image, including any relevant questions and answers."
+}
